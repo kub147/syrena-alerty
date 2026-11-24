@@ -22,7 +22,7 @@ const CW=new URLSearchParams(location.search).get('cwiczenie')==='1';
 const el=(t,x)=>{const e=document.createElement(t);e.textContent=x||'';return e};
 const czysty=x=>new DOMParser().parseFromString(x||'','text/html').body.textContent;
 function pokaz(d){
- const stary=!d||!(Date.now()-Date.parse(d.odczyt)<15*60e3);
+ const stary=!d||!(Date.now()-Date.parse(d.odczyt)<20*60e3);
  const w=document.getElementById('w');w.replaceChildren();
  for(const n of ['podkarpackie','lubelskie']){
   const x=(d&&d.wojewodztwa&&d.wojewodztwa[n])||{status:'brak_danych',komunikaty:[]};

@@ -1,6 +1,6 @@
 import unittest
 from datetime import datetime
-from pobierz import geojson, klasyfikuj, status
+from pobierz import geojson, klasyfikuj, sprobuj, status
 
 TERAZ = datetime(2026, 11, 24, 12, 0)
 
@@ -67,6 +67,23 @@ class Status(unittest.TestCase):
 
     def test_same_nieaktualne(self):
         self.assertEqual(status([k("Zagrożenie atakiem z powietrza", do="2026-11-24 11:30:00")], TERAZ), "brak_komunikatu")
+
+
+class Ponawianie(unittest.TestCase):
+    def test_drugi_raz_sie_udaje(self):
+        wyniki = iter([OSError("sieć"), [1]])
+
+        def f():
+            w = next(wyniki)
+            if isinstance(w, Exception):
+                raise w
+            return w
+        self.assertEqual(sprobuj(f, przerwa=0), [1])
+
+    def test_po_trzech_bledach_brak_danych(self):
+        def f():
+            raise OSError("sieć")
+        self.assertIsNone(sprobuj(f, przerwa=0))
 
 
 class Mapa(unittest.TestCase):

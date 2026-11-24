@@ -3,6 +3,7 @@ import html
 import json
 import re
 import sys
+import time
 import unicodedata
 import urllib.request
 from datetime import datetime
@@ -75,6 +76,16 @@ def pobierz(wojewodztwo):
     return list({x["id"]: x for x in wszystkie}.values())
 
 
+def sprobuj(f, ile=3, przerwa=5):
+    for proba in range(ile):
+        try:
+            return f()
+        except Exception as blad:
+            print(f"próba {proba + 1}: {type(blad).__name__}: {blad}", file=sys.stderr)
+            time.sleep(przerwa)
+    return None
+
+
 def geojson(granice, wynik):
     odczyt = int(datetime.fromisoformat(wynik["odczyt"]).timestamp() * 1000)
     cechy = []
@@ -92,11 +103,7 @@ def main(plik):
     lokalny = teraz.replace(tzinfo=None)
     wynik = {"odczyt": teraz.isoformat(timespec="seconds"), "zrodlo": "RSO, komunikaty.tvp.pl", "wojewodztwa": {}}
     for w in WOJEWODZTWA:
-        try:
-            lista = pobierz(w)
-        except Exception as blad:
-            print(f"{w}: {type(blad).__name__}: {blad}", file=sys.stderr)
-            lista = None
+        lista = sprobuj(lambda: pobierz(w))
         wynik["wojewodztwa"][w] = {
             "status": status(lista, lokalny),
             "komunikaty": [
