@@ -29,5 +29,11 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: strona
+      - run: sleep 10  # lista artefaktów bywa opóźniona
       - id: strona
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - if: steps.strona.outcome == 'failure'
+        run: sleep 30
+      - if: steps.strona.outcome == 'failure'
         uses: actions/deploy-pages@v4
