@@ -75,6 +75,18 @@ def pobierz(wojewodztwo):
     return list({x["id"]: x for x in wszystkie}.values())
 
 
+def geojson(granice, wynik):
+    odczyt = int(datetime.fromisoformat(wynik["odczyt"]).timestamp() * 1000)
+    cechy = []
+    for f in granice["features"]:
+        nazwa = f["properties"]["wojewodztwo"]
+        w = wynik["wojewodztwa"].get(nazwa, {"status": "brak_danych", "komunikaty": []})
+        wazny = next((k["tytul"] for k in w["komunikaty"] if k["klasa"] == w["status"]), "")
+        cechy.append({**f, "properties": {"wojewodztwo": nazwa, "status": w["status"], "tytul": wazny,
+                                          "liczba": len(w["komunikaty"]), "odczyt": wynik["odczyt"], "odczyt_ms": odczyt}})
+    return {"type": "FeatureCollection", "features": cechy}
+
+
 def main(plik):
     teraz = datetime.now(ZoneInfo("Europe/Warsaw"))
     lokalny = teraz.replace(tzinfo=None)
@@ -93,6 +105,8 @@ def main(plik):
                 for x in lista or [] if klasyfikuj(x, lokalny) != "nieaktualny"],
         }
     Path(plik).write_text(json.dumps(wynik, ensure_ascii=False, indent=1), encoding="utf-8")
+    granice = json.loads((Path(__file__).parent / "wojewodztwa.json").read_text(encoding="utf-8"))
+    Path(plik).with_suffix(".geojson").write_text(json.dumps(geojson(granice, wynik), ensure_ascii=False), encoding="utf-8")
     print({w: (d["status"], len(d["komunikaty"])) for w, d in wynik["wojewodztwa"].items()})
 
 

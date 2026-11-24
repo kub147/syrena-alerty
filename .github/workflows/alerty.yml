@@ -24,7 +24,6 @@ jobs:
       - run: cd alerty && python3 -m unittest
       - run: |
           mkdir -p strona && cp alerty/index.html strona/
-          cp alerty/*.geojson strona/ 2>/dev/null || true
           python3 alerty/pobierz.py strona/alerty.json
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

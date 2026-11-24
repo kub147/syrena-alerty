@@ -1,6 +1,6 @@
 import unittest
 from datetime import datetime
-from pobierz import klasyfikuj, status
+from pobierz import geojson, klasyfikuj, status
 
 TERAZ = datetime(2026, 11, 24, 12, 0)
 
@@ -67,6 +67,20 @@ class Status(unittest.TestCase):
 
     def test_same_nieaktualne(self):
         self.assertEqual(status([k("Zagrożenie atakiem z powietrza", do="2026-11-24 11:30:00")], TERAZ), "brak_komunikatu")
+
+
+class Mapa(unittest.TestCase):
+    def test_status_i_czas_na_poligonie(self):
+        granice = {"type": "FeatureCollection", "features": [
+            {"type": "Feature", "properties": {"wojewodztwo": "lubelskie"}, "geometry": None},
+            {"type": "Feature", "properties": {"wojewodztwo": "podkarpackie"}, "geometry": None}]}
+        wynik = {"odczyt": "2026-11-24T12:00:00+01:00", "wojewodztwa": {
+            "lubelskie": {"status": "zagrozenie", "komunikaty": [
+                {"klasa": "inny", "tytul": "Śnieg"}, {"klasa": "zagrozenie", "tytul": "Alarm"}]}}}
+        a, b = (f["properties"] for f in geojson(granice, wynik)["features"])
+        self.assertEqual((a["status"], a["tytul"], a["liczba"]), ("zagrozenie", "Alarm", 2))
+        self.assertEqual(a["odczyt_ms"], 1795518000000)
+        self.assertEqual((b["status"], b["tytul"]), ("brak_danych", ""))
 
 
 if __name__ == "__main__":
