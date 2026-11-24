@@ -1,0 +1,11 @@
+kod_zgloszenia,rodzaj,powierzchnia_m2,miejsca_wozki,pojemnosc,wejscie,gmina,powiat,zgoda,status,zrodlo_danych,opis,data_zgloszenia,lat,lon
+PRZYKLAD-01,blok,42.5,1,27,z klatki schodowej,Kolbuszowa,pow. kolbuszowski,tak,sprawdzona,przykladowe,DANE PRZYKŁADOWE – obiekt wymyślony na potrzeby zajęć,2026-11-15,50.244,21.776
+PRZYKLAD-02,dom,24,0,16,z podwórza,Kolbuszowa,pow. kolbuszowski,tak,do_sprawdzenia,przykladowe,DANE PRZYKŁADOWE – obiekt wymyślony na potrzeby zajęć,2026-11-16,50.249,21.79
+PRZYKLAD-03,garaz,90,2,59,rampa,Kolbuszowa,pow. kolbuszowski,tak,do_sprawdzenia,przykladowe,DANE PRZYKŁADOWE – obiekt wymyślony na potrzeby zajęć,2026-11-17,50.239,21.765
+PRZYKLAD-04,dom,18,0,12,z podwórza,Cmolas,pow. kolbuszowski,tak,zgloszona,przykladowe,DANE PRZYKŁADOWE – obiekt wymyślony na potrzeby zajęć,2026-11-18,50.294,21.745
+PRZYKLAD-05,dom,27,1,17,z wnętrza domu,Cmolas,pow. kolbuszowski,tak,odrzucona,przykladowe,DANE PRZYKŁADOWE – obiekt wymyślony na potrzeby zajęć,2026-11-19,50.291,21.785
+PRZYKLAD-06,dom,21,0,14,z podwórza,Niwiska,pow. kolbuszowski,tak,zgloszona,przykladowe,DANE PRZYKŁADOWE – obiekt wymyślony na potrzeby zajęć,2026-11-20,50.215,21.635
+PRZYKLAD-07,budynek_gospodarczy,35,0,23,z podwórza,Niwiska,pow. kolbuszowski,tak,do_sprawdzenia,przykladowe,DANE PRZYKŁADOWE – obiekt wymyślony na potrzeby zajęć,2026-11-21,50.221,21.64
+PRZYKLAD-08,blok,60,2,39,z klatki schodowej,Majdan Królewski,pow. kolbuszowski,tak,sprawdzona,przykladowe,DANE PRZYKŁADOWE – obiekt wymyślony na potrzeby zajęć,2026-11-22,50.375,21.755
+PRZYKLAD-09,dom,15,0,10,z wnętrza domu,Dzikowiec,pow. kolbuszowski,tak,odrzucona,przykladowe,DANE PRZYKŁADOWE – obiekt wymyślony na potrzeby zajęć,2026-11-23,50.278,21.85
+PRZYKLAD-10,dom,30,1,19,z podwórza,Raniżów,pow. kolbuszowski,tak,zgloszona,przykladowe,DANE PRZYKŁADOWE – obiekt wymyślony na potrzeby zajęć,2026-11-24,50.268,21.985
