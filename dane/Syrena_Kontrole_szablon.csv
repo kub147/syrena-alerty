@@ -1,2 +1,2 @@
 kod_kontroli,typ_obiektu,id_psp,kod_zgloszenia,nazwa,powiat,gmina,wejscie,oznakowanie,bariery,dostep_godziny,powierzchnia_m2,miejsca_wozki,pojemnosc,zgoda_wlasciciela,wynik,powod,opis,data_kontroli,weryfikator,lat,lon
-SZABLON,punkt_psp,x,x,SZABLON DO USUNIECIA,pow. kolbuszowski,x,swobodne,tak,brak,x,10.5,0,7,nie_dotyczy,spelnia,x,x,2026-11-24,x,50.244,21.776
+SZABLON,punkt_psp,x,x,SZABLON,kolbuszowski,x,swobodne,tak,brak,x,10.5,0,7,nie_dotyczy,spelnia,x,x,2026-11-24 10:00:00,x,50.244,21.776
