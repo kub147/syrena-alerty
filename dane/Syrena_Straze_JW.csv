@@ -1,0 +1,41 @@
+nazwa,rodzaj,wojewodztwo,powiat,adres,lat,lon
+KM PSP Biała Podlaska,Komenda PSP,lubelskie,Biała Podlaska,"Sidorska 93, Biała Podlaska",52.0240916583287,23.1574690136696
+KM PSP Chełm,Komenda PSP,lubelskie,Chełm,"Prym. S. Wyszyńskiego 2b, Chełm",51.1270049666644,23.4949019413819
+KM PSP Lublin,Komenda PSP,lubelskie,Lublin,"Antoniego Szczerbowskiego 6, Lublin",51.2395306272909,22.555649999516
+KM PSP Przemyśl,Komenda PSP,podkarpackie,przemyski,"Pl. Św. Floriana 1, Przemyśl",49.7870928949536,22.7779988169954
+KM PSP Rzeszów,Komenda PSP,podkarpackie,Rzeszów,"Maurycego Mochnackiego 4, Rzeszów",50.0365387021489,21.996260084044
+KM PSP Tarnobrzeg,Komenda PSP,podkarpackie,Tarnobrzeg,"Targowa 3, Tarnobrzeg",50.5712439692973,21.6734173060868
+KM PSP Zamość,Komenda PSP,lubelskie,Zamość,"Kilińskiego 62, Zamość",50.7247677341559,23.260766666463
+KP PSP Biłgoraj,Komenda PSP,lubelskie,biłgorajski,"Gen. H. Dąbrowskiego 10, Biłgoraj",50.5344761199905,22.7170863196483
+KP PSP Brzozów,Komenda PSP,podkarpackie,brzozowski,"Mickiewicza 1, Brzozów",49.6967357295852,22.0226645107117
+KP PSP Dębica,Komenda PSP,podkarpackie,dębicki,"Poddęby 6a, Dębica",50.0493292577168,21.4203945458047
+KP PSP Hrubieszów,Komenda PSP,lubelskie,hrubieszowski,"Gródecka 36, Hrubieszów",50.8042712207896,23.9121320562825
+KP PSP Janów Lubelski,Komenda PSP,lubelskie,janowski,"Piłsudskiego 58, Janów Lubelski",50.7077205404319,22.4143869556435
+KP PSP Jarosław,Komenda PSP,podkarpackie,jarosławski,"Morawska 2, Jarosław",50.0029823838743,22.7102315646743
+KP PSP Jasło,Komenda PSP,podkarpackie,jasielski,"Mickiewicza 33, Jasło",49.747045734534,21.4645005877959
+KP PSP Kolbuszowa,Komenda PSP,podkarpackie,kolbuszowski,"Piekarska 13, Kolbuszowa",50.2431928753146,21.7754220372327
+KP PSP Krasnystaw,Komenda PSP,lubelskie,krasnostawski,"Poniatowskiego 10, Krasnystaw",50.9862131546441,23.1696218570495
+KP PSP Kraśnik,Komenda PSP,lubelskie,kraśnicki,"Obwodowa 1, Kraśnik",50.9272410183022,22.2487911190519
+KP PSP Lesko,Komenda PSP,podkarpackie,leski,"Jana Pawła II 2, Lesko",49.4750948865519,22.3241228742858
+KP PSP Leżajsk,Komenda PSP,podkarpackie,leżajski,"Opalińskiego 6, Leżajsk",50.2630983973879,22.4152495118609
+KP PSP Lubaczów,Komenda PSP,podkarpackie,lubaczowski,"Sobieskiego 13, Lubaczów",50.1500732090287,23.1330100120578
+KP PSP Lubartów,Komenda PSP,lubelskie,lubartowski,"Jana Pawła II 14, Lubartów",51.4625417400627,22.6104823051538
+KP PSP Łańcut,Komenda PSP,podkarpackie,łańcucki,"Grunwaldzka 68, Łańcut",50.0778026437657,22.2333464433101
+KP PSP Łęczna,Komenda PSP,lubelskie,łęczyński,"Przemysłowa 18, Łęczna",51.3002277016309,22.8685827163043
+KP PSP Łuków,Komenda PSP,lubelskie,łukowski,"Partyzantów 6, Łuków",51.9252278857492,22.3847677738802
+KP PSP Mielec,Komenda PSP,podkarpackie,mielecki,"Sienkiewicza 54, Mielec",50.2923900251995,21.4240180023615
+KP PSP Nisko,Komenda PSP,podkarpackie,niżański,"Nowa 42, Nisko",50.4983852342025,22.1474979204493
+KP PSP Opole Lubelskie,Komenda PSP,lubelskie,opolski,"Przemysłowa 25, Opole Lubelskie",51.1406913748243,21.9781128167909
+KP PSP Parczew,Komenda PSP,lubelskie,parczewski,"Piwonia 12, Parczew",51.6438914253313,22.9032489014221
+KP PSP Przeworsk,Komenda PSP,podkarpackie,przeworski,"Ignacego Krasickiego  7, Przeworsk",50.0606402719608,22.4963555389537
+KP PSP Puławy,Komenda PSP,lubelskie,puławski,"Lubelska 51, Puławy",51.4147520198828,21.99052587659
+KP PSP Radzyń Podlaski,Komenda PSP,lubelskie,radzyński,"Pomiarowa 1, Radzyń Podlaski",51.791007825654,22.6181124883767
+KP PSP Ropczyce,Komenda PSP,podkarpackie,ropczycko-sędziszowski,"Św. Floriana 6, Ropczyce",50.0516117094648,21.6119181398303
+KP PSP Ryki,Komenda PSP,lubelskie,rycki,"Warszawska 25, Ryki",51.6266829686963,21.9307915719577
+KP PSP Sanok,Komenda PSP,podkarpackie,sanocki,"Wincentego Witosa 60, Sanok",49.5717296982773,22.166696282168
+KP PSP Stalowa Wola,Komenda PSP,podkarpackie,stalowowolski,"Jana Pawła II 27, Stalowa Wola",50.5772402583167,22.0590903344816
+KP PSP Strzyżów,Komenda PSP,podkarpackie,strzyżowski,"Sportowa 20, Strzyżów",49.8767047972179,21.7735736883415
+KP PSP Świdnik,Komenda PSP,lubelskie,świdnicki,"Al. Lotników Polskich 2, Świdnik",51.226417119285,22.7011861501176
+KP PSP Tomaszów Lubelski,Komenda PSP,lubelskie,tomaszowski,"dr. Janusza Petera 7, Tomaszów Lubelski",50.4441061213773,23.4222299494689
+KP PSP Ustrzyki Dolne,Komenda PSP,podkarpackie,bieszczadzki,"1 Maja 22, Ustrzyki Dolne",49.4297002832908,22.5859751733127
+KP PSP Włodawa,Komenda PSP,lubelskie,włodawski,"Tysiąclecia Państwa Polskiego 8, Włodawa",51.5442491814574,23.5519696357562
